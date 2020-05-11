@@ -1,0 +1,13 @@
+apiVersion: "appgw.ingress.k8s.io/v1"
+kind: AzureIngressProhibitedTarget
+metadata:
+  name: blue-ase-prohibitions
+spec:
+  hostname: blue-ase.dockertutorial.technology
+---
+apiVersion: "appgw.ingress.k8s.io/v1"
+kind: AzureIngressProhibitedTarget
+metadata:
+  name: guestbook-blue-ase-prohibitions
+spec:
+  hostname: guestbook-blue-ase.dockertutorial.technology

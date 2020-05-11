@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# Edit these values to reflect your environment:
+
+# Region 1
+export REGION1=australiaeast
+export REGION1_SHORTNAME=eau
+export RESOURCE_GROUP1="aks-ha-demo-${REGION1_SHORTNAME}"
+export VNET1_NAME="vnet-1-${REGION1_SHORTNAME}"
+export VNET1_ADDRESS_PREFIX="10.0.0.0/16"
+export AG1_NAME="appgw-1-${REGION1_SHORTNAME}"
+export AG1_SUBNET_PREFIX="10.0.0.0/24"
+export BLUE1_SUBNET_PREFIX="10.0.1.0/24"
+export GREEN1_SUBNET_PREFIX="10.0.2.0/24"
+export BLUE1_SERVICE_CIDR="10.0.3.0/24"
+export BLUE1_DNS_SERVICE_IP="10.0.3.10"
+export GREEN1_SERVICE_CIDR="10.0.4.0/24"
+export GREEN1_DNS_SERVICE_IP="10.0.4.10"
+
+# Region 2
+export REGION2=australiasoutheast
+export REGION2_SHORTNAME=ase
+export RESOURCE_GROUP2="aks-ha-demo-${REGION2_SHORTNAME}"
+export VNET2_NAME="vnet-1-${REGION2_SHORTNAME}"
+export VNET2_ADDRESS_PREFIX="10.1.0.0/16"
+export AG2_NAME="appgw-1-${REGION2_SHORTNAME}"
+export AG2_SUBNET_PREFIX="10.1.0.0/24"
+export BLUE2_SUBNET_PREFIX="10.1.1.0/24"
+export GREEN2_SUBNET_PREFIX="10.1.2.0/24"
+export BLUE2_SERVICE_CIDR="10.1.3.0/24"
+export BLUE2_DNS_SERVICE_IP="10.1.3.10"
+export GREEN2_SERVICE_CIDR="10.1.4.0/24"
+export GREEN2_DNS_SERVICE_IP="10.1.4.10"

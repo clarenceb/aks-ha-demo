@@ -1,0 +1,13 @@
+apiVersion: "appgw.ingress.k8s.io/v1"
+kind: AzureIngressProhibitedTarget
+metadata:
+  name: green-eau-prohibitions
+spec:
+  hostname: green-eau.dockertutorial.technology
+---
+apiVersion: "appgw.ingress.k8s.io/v1"
+kind: AzureIngressProhibitedTarget
+metadata:
+  name: guestbook-green-eau-prohibitions
+spec:
+  hostname: guestbook-green-eau.dockertutorial.technology
